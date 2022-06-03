@@ -1,0 +1,47 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot AJAX jQuery CRUD</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+    
+</head>
+<body>
+
+<h2>Spring Boot AJAX jQuery CRUD</h2>
+
+<p><a class='btn' href="#add" rel="modal:open">add new employee</a></p>
+
+<table class="content-table" border="1">
+    <tr>
+        <th>Id</th>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>email</th>
+    </tr>
+</table>
+
+<form id="add" action="#" style="display:none;">
+    <div id='msg'/>
+    <h3>Add a new employee</h3>
+    <p>
+        <label>first name</label>
+        <input type="text" id="firstName" name="firstName">
+        <label>last name</label>
+        <input type="text" id="lastName" name="lastName">
+        <label>email</label>
+        <input type="text" id="email" name="email">
+
+    </p>
+    <p>
+        <input type="submit" id="addNew" value="Submit">
+    </p>
+</form>
+
+</body>
+</html>

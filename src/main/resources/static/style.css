@@ -1,0 +1,12 @@
+.content-table {
+	margin: 0px; 
+	font-size: 1.2em;
+	min-width: 800px;
+}
+
+.content-table thead tr {
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+}
